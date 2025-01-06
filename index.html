@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TheLICIOUS</title>
+      <!-- css and js file link --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"></script>
+
+
+</head>
+<body>
+<!--header section--> 
+ <header>
+
+    <img src="logo.png" id="logo">
+ 
+    <nav class="navbar">
+        <a class = "active" href="#about">home</a>
+        <a href="#dishes">featured</a>
+        <a href="#menu">menu</a>
+        <a href="#location">Contact Us</a>
+        <a href="#review">review</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYvaxJaMcEnRjZuZdoNVcPVUmaRsqXcUhrQ3X8vGigQQR_Lg/viewform?usp=header" class="sub-heading">Order Now</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        <a href="https://www.tiktok.com/@thelicious_hq" class="fa-brands fa-tiktok"></a>
+        <a href="https://m.facebook.com/thelicious.hq/" class="fa-brands fa-facebook-f"></a>
+        <a href="https://www.instagram.com/thelicious_hq/" class="fa-brands fa-instagram"></a>
+    </div>
+
+ </header>
+<!--header section end--> 
+<!--search form-->
+<form action="#" id="search-form">
+    <input type="search" placeholder="Search here..." id="search-box" required>
+    <button type="submit" class="fas fa-search"></button>
+    <i class="fas fa-times" id="close"></i>
+    <div class="suggestionBox"></div>
+</form>
+
+<!--about/new home section starts-->
+
+<section class="about" id="about">
+
+    <h3 class="sub-heading">Welcome to TheLicious</h3><br>
+    <div class="bg-image"></div>
+
+    <div class="row">
+
+       <div class="image">
+        <img src="images/bg1.jpg" alt="Delicious food and desserts at Thelicious">
+       </div>
+       <div class="content">
+        <h3>Opening Hours</h3>
+            <p>Weekdays: Mon-Fri, 9:00 AM - 6:30 PM</p>
+            <p>Weekends: Sat-Sun, 9:00 AM - 5:00 PM</p>
+        <h3>Your Gateway to Delicious Choices</h3>
+        <p>Bringing you the best of local and international delights, Thelicious serves a selection of top-quality foods and desserts. From indulgent treats 
+            to satisfying food, we make it easy to enjoy your favorite flavors at IIUM.</p><br><br>
+            
+      
+
+       <div class="icons-container">
+
+         <div class="icons">
+            <i class="fa-solid fa-cookie"></i>
+            <span>Variety Of Options</span>
+         </div>
+
+         <div class="icons">
+            <i class="fa-solid fa-cake-candles"></i>
+            <span>Fascinating Desserts</span>
+         </div>
+
+         <div class="icons">
+            <i class="fa-solid fa-qrcode"></i>
+            <span>easy QR payments</span>
+         </div>
+        </div>
+
+        <a href="https://m.facebook.com/thelicious.hq/" class="btn">learn more</a>
+    </div>
+
+    </div>
+
+</section>
+
+<!--swiper section -->
+
+<section class="home" id="home">
+
+    <div class="swiper mySwiper home-slider">
+
+        <div class="swiper-wrapper wrapper">
+
+            <div class="swiper-slide slide">
+
+            <div class="content">
+
+                <span>Our Top Picks's Today</span>
+                <h3>Nasi Ayam Maktok</h3>
+                <p>Savor the rich, aromatic flavors of this traditional
+                     Malaysian dish, featuring tender chicken and fragrant rice.</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYvaxJaMcEnRjZuZdoNVcPVUmaRsqXcUhrQ3X8vGigQQR_Lg/viewform?usp=header" class="btn">Order Now</a>
+            </div>
+
+            <div class="image">
+                <img src="images/nasiayam.png" alt="">
+
+            </div>
+            </div>
+
+            <div class="swiper-slide slide">
+
+                <div class="content">
+    
+                    <span>Our Top Picks's Today</span>
+                    <h3>Nims Chocojar (Original)</h3>
+                    <p>Indulge in the classic flavor of our rich and creamy chocojar. Perfectly 
+                        crafted for chocolate lovers who crave an authentic treat.</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYvaxJaMcEnRjZuZdoNVcPVUmaRsqXcUhrQ3X8vGigQQR_Lg/viewform?usp=header" class="btn">Order Now</a>
+                </div>
+    
+                <div class="image">
+                    <img src="images/chocojar.png" alt="">
+    
+                </div>
+                </div>
+
+             <div class="swiper-slide slide">
+
+                    <div class="content">
+        
+                        <span>Our Top Picks's Today</span>
+                        <h3>Dlicious Kitchen Ramen Ayam Korea</h3>
+                        <p>A rich and hearty Korean-style chicken 
+                            ramen, packed with bold flavors and satisfying textures.</p>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYvaxJaMcEnRjZuZdoNVcPVUmaRsqXcUhrQ3X8vGigQQR_Lg/viewform?usp=header" class="btn">Order Now</a>
+                    </div>
+        
+                    <div class="image">
+                        <img src="images/ramen2.png" alt="">
+        
+                    </div>
+                    </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+    </div>
+
+</section>
+
+<!--about/home section end-->
+
+<!--dishes section starts-->
+
+<section class="dishes" id="dishes">
+
+    <h3 class="sub-heading">Customer Favorites</h3>
+    <h1 class="heading">Dishes That Everyone Loves</h1>
+
+
+
+<div class="box-container">
+
+    <div class ="box">
+        <a class="fas fa-thumbs-up"></a>
+        <img src="images/CookiesnDip-removebg-preview.png" alt="">
+        <h3>Cookies Heaven Cookies with sauce</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <span>RM20.00</span>
+        <a class="btn">available</a>
+    </div>
+
+    <div class ="box">
+        <a class="fas fa-thumbs-up"></a>
+        <img src="images/Dumpling-removebg-preview.png" alt="">
+        <h3>Nuwa Dumpling With Sauce</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <span>RM11.00</span>
+        <a class="btn">available</a>
+    </div>
+
+    <div class ="box">
+        <a class="fas fa-thumbs-up"></a>
+        <img src="images/GrillChicken-removebg-preview.png" alt="">
+        <h3>Grill chicken sandwich</h3><br><br>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <span>RM10.00</span>
+        <a class="btn">available</a>
+    </div>
+
+    <div class ="box">
+        <a class="fas fa-thumbs-up"></a>
+        <img src="images/KoreanGarlicCheese-removebg-preview.png" alt="">
+        <h3>Bella Bakery Korean Garlic Cheese</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <span>RM10.00</span>
+        <a class="btn">Sold Out</a>
+    </div>
+
+    <div class ="box">
+        <img src="images/Macaron-removebg-preview.png" alt="">
+        <h3>Macaron</h3><br><br><br>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <span>RM18.00</span>
+        <a class="btn">sold out</a>
+    </div>
+
+    <div class ="box">
+        <img src="images/ViatnameseRolls-removebg-preview.png" alt="">
+        <h3>Dapor Cik Tauhu Vietnam roll Crab</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <span>RM11.00</span>
+        <a class="btn">sold out</a>
+    </div>
+
+    <div class ="box">
+        <img src="images/chocojar.png" alt="">
+        <h3>Nims Chocojar (Original)</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <span>RM15.00</span>
+        <a class="btn">available</a>
+    </div>
+
+    <div class ="box">
+        <img src="images/nasiayam.png" alt="">
+        <h3>Nasi ayam maktok</h3><br><br><br>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <span>RM9.00</span>
+        <a class="btn">available</a>
+    </div>
+
+</div>
+
+</section>
+
+<!--dishes section end-->
+<!--menu section starts-->
+
+<section class="menu" id="menu">
+
+    <h3 class="sub-heading">Explore Our Menu</h3>
+    <h1 class="heading">Delicious Choices, Every Bite Matters </h1>
+
+    <div class="box-container">
+
+
+        
+        <div class="box">
+            <div class="image">
+            <img src="images/CookiesnDip.jpg" alt="">
+            <a class="fas fa-heart"></a>
+            </div>
+
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <h3>Cookies Heaven Cookies with sauce</h3><br><br>
+                <p>Experience the ultimate cookie indulgence with dipping sauce for these heavenly treats.</p><br>
+                <a class="btn">available</a>
+                <span class="price">RM20.00</span>
+            </div>
+
+        </div>
+
+        <div class="box">
+            <div class="image">
+            <img src="images/Dumpling.jpg" alt="">
+            <a class="fas fa-heart"></a>
+            </div>
+
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <h3>Nuwa Dumpling With Sauce</h3>
+                <p>Delicious and savory dumplings paired with a flavorful dipping sauce.
+                     A must-try snack that’s perfect for any time.</p><br>
+                <a class="btn">available</a>
+                <span class="price">RM11.00</span>
+            </div>
+
+        </div>
+
+        <div class="box">
+            <div class="image">
+            <img src="images/GrillChicken.jpg" alt="">
+            <a class="fas fa-heart"></a>
+            </div>
+
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <h3>Grill chicken sandwich</h3><br>
+                <p>A hearty sandwich filled with tender, grilled chicken and fresh 
+                    vegetables. A wholesome and satisfying meal for busy days.</p>
+                <a class="btn">available</a>
+                <span class="price">RM10.00</span>
+            </div>
+
+        </div>
+        
+        <div class="box">
+            <div class="image">
+            <img src="images/KoreanGarlicCheese.jpg" alt="">
+            <a class="fas fa-heart"></a>
+            </div>
+
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <h3>Bella Bakery Korean Garlic Cheese</h3><br>
+                <p>Soft, fluffy bread infused with garlic and topped with
+                     melted cheese for an irresistible Korean-inspired flavor.</p>
+                <a class="btn">sold out</a>
+                <span class="price">RM10.00</span>
+            </div>
+
+        </div>
+
+        <div class="box">
+            <div class="image">
+            <img src="images/Macaron.jpg" alt="">
+            <a class="fas fa-heart"></a>
+            </div>
+
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <h3>Macaron</h3><br>
+                <p>These delicate, colorful macarons are a feast for the eyes and the palate.
+                     Perfectly sweet and crisp, they’re ideal for special occasions or as a gift.
+                </p>
+                <a class="btn">sold out</a>
+                <span class="price">RM18.00</span>
+            </div>
+
+        </div>
+
+        <div class="box">
+            <div class="image">
+            <img src="images/NasiAyam.jpg" alt="">
+            <a class="fas fa-heart"></a>
+            </div>
+
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <h3>Nasi ayam maktok</h3><br>
+                <p>A Malaysian's all time favourite. Savor the rich, aromatic flavors of this traditional
+                     Malaysian dish, featuring tender chicken and fragrant rice.</p>
+                <a class="btn">available</a>
+                <span class="price">RM9.00</span>
+
+        </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+            <img src="images/ViatnameseRolls.jpg" alt="">
+            <a class="fas fa-heart"></a>
+            </div>
+
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <h3>Dapor Cik Tauhu Vietnam roll Crab</h3>
+                <p>Fresh and vibrant Vietnamese-style rolls stuffed with crab meat for a refreshing and delicious experience.</p>
+                <a class="btn">sold out</a>
+                <span class="price">RM11.00</span>
+            </div>
+
+    </div>
+
+        <div class="box">
+            <div class="image">
+            <img src="images/Chocojar2.jpg" alt="">
+            <a class="fas fa-heart"></a>
+            </div>
+
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <h3>Nims Chocojar (Original)</h3>
+                <p>Indulge in our flavor rich and creamy chocojar.
+                     Perfectly crafted for chocolate lovers who crave an
+                      authentic treat.</p>
+                <a class="btn">available</a>
+                <span class="price">RM15.00</span>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <div class="image">
+            <img src="images/Chocojar1.jpg" alt="Chocojar Rainbow">
+            </div>
+
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <h3>Nims Chocojar (Rainbow)</h3>
+                <p>A twist on the classic chocojar,
+                     with vibrant toppings. 
+                    Satisfy your sweet tooth with every spoon.</p>
+                <a class="btn">available</a>
+                <span class="price">RM15.00</span>
+
+        </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+            <img src="images/Chocojar3.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <h3>Nims Chocojar (Strawberry)</h3>
+                <p>A sweet and creamy strawberry-flavored chocolate jar that
+                     offers the perfect in each bite.</p>
+                <a class="btn">available</a>
+                <span class="price">RM15.00</span>
+            </div>
+
+        </div>
+        
+        <div class="box">
+            <div class="image">
+            <img src="images/NasiBerempah.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <h3>Nasi berempah ayam madu maktok</h3><br>
+                <p>Featuring spiced rice and 
+                    sweet honey-glazed chicken.</p><br>
+                <a class="btn">available</a>
+                <span class="price">RM12.00</span>
+            </div>
+
+        </div>
+
+        <div class="box">
+            <div class="image">
+            <img src="images/PopcornGSC.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <h3>Popcorn (GSC)</h3><br><br>
+                <p>Enjoy cinema-style popcorn in the comfort of your home! Perfectly seasoned for a movie-night snack. </p><br>
+                <a class="btn">available</a>
+                <span class="price">RM6.00</span>
+            </div>
+
+        </div>
+
+        <div class="box">
+            <div class="image">
+            <img src="images/BiskutRaya.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <h3>Classic cookies chocolate  chip</h3>
+                <p>Delightfully crunchy and loaded with chocolate chips, 
+                    these cookies are a timeless treat for any occasion. </p>
+                <a class="btn">available</a>
+                <span class="price">RM16.00</span>
+
+        </div>
+       </div>
+
+        <div class="box">
+            <div class="image">
+            <img src="images/Ramen.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <h3>Dlicious Kitchen Ramen Ayam Korea</h3><br>
+                <p>A rich and hearty Korean-style chicken ramen, 
+                    packed with bold flavors and satisfying textures.</p><br>
+                <a class="btn">available</a>
+                <span class="price">RM10.00</span>
+            </div>
+
+        </div>
+
+        <div class="box">
+            <div class="image">
+            <img src="images/TauhuBergedil.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <h3>Dapor Cik Tauhu Tauhu Pegedil Daging</h3><br>
+                <p>Soft tofu stuffed with flavorful beef filling, delivering a 
+                    savory bite that’s perfect for snack time.</p><br>
+                <a class="btn">available</a>
+                <span class="price">RM10.00</span>
+            </div>
+
+        </div>
+
+</section>
+
+<!--menu section end-->
+<!--location section starts-->
+
+    <section class="location" id="location">
+        <div class="loc" id="loc">
+            <h4>Contact Us</h4>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.400788248563!2d101.73744479999999!3d3.2501493999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc397ad0aa3a85%3A0xdea33e03cc9ea336!2sTheLicious%2C%20Food%20%26%20Dessert%20(UIAM)!5e0!3m2!1sen!2smy!4v1735999720662!5m2!1sen!2smy" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="waze">
+                <a class = "wazes" href="https://waze.com/ul/hw2867pe4u"> <i class="fa-brands fa-waze"></i> Our Location On Waze App</a>
+            </div>
+
+            <div class="contact-container">
+                <form
+                  action="https://api.web3forms.com/submit"
+                  method="POST"
+                  class="contact-right"
+                >
+                  <div class="contact-right-title">
+                    <h2>How Can We Help You?</h2>
+                    <hr />
+                  </div>
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="d7c268a3-db9d-47e1-9d30-6903537de50f"
+                  />
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    class="contact-input"
+                    required
+                  />
+                  <input
+                    type="text"
+                    name="email"
+                    placeholder="Your Email"
+                    class="contact-input"
+                    required
+                  />
+                  <textarea
+                    name="message"
+                    placeholder="Your Message"
+                    class="contact-input"
+                    required
+                  ></textarea>
+                  <button type="submit">
+                    Submit <img src="/images/arrow_icon.png" />
+                  </button>
+                </form>
+              </div>
+        
+        </div>
+
+
+    </section>
+
+<!--location section ends-->
+<!--review section starts-->
+
+<section class="review" id="review">
+
+    <h3 class="sub-heading">customer's review</h3>
+    <h1 class="heading">See Why Everyone’s Talking About Us</h1>
+
+    <div class="Swiper mySwiper review-slider">
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="images/Kicon2.png.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Kawan Kamil</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>Very good place for me grab food before going to
+                     class. Plus, it a friendly price for students</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="images/sicon.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Wan Umair</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>My go to place for a quick bite.
+                     Bole recommend kat member</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="images/Aicon.png" alt="">
+                    <div class="user-info">
+                        <h3>Aiman Irfan</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>The foods are variety. My favourite shop to go after class.</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="images/Nicon.png" alt="">
+                    <div class="user-info">
+                        <h3>Nur Adibah</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>Good place to grab a quick bite to eat.</p>
+            </div>
+        </div>
+    </div>
+
+ </section>
+
+ <!--review section ends-->
+ <!--footer section starts-->
+
+    <section class="footer">
+        <div class="box-container">
+       
+        <div class="box">
+            <h3>Quick Links</h3>
+                <a href="#about">Home</a>
+                <a href="#dishes">Featured</a>
+                <a href="#menu">Menu</a>
+                <a href="#location">Location</a>
+                <a href="#review">Review</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYvaxJaMcEnRjZuZdoNVcPVUmaRsqXcUhrQ3X8vGigQQR_Lg/viewform?usp=header" class="footer">Order Now</a>
+            </div>    
+        <div class="box">
+            <h3>Follow Us</h3>
+                <a href="https://m.facebook.com/thelicious.hq/">Facebook</a>
+                <a href="https://www.instagram.com/thelicious_hq/">Instagram</a>
+                <a href="https://www.tiktok.com/@thelicious_hq">Tiktok</a>
+        </div>          
+        <div class="box">
+            <h3>Contact Us</h3>
+                <a href="https://wa.me/164132110">+6016-413 2110</a>
+            </div>
+    
+        </div>
+
+        
+        <div class="credit">2025 TheLicious Food & Dessert. All rights reserved.</div>
+    </section>
+
+<!-- js file link --> 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+<script src="script.js"></script>
+
+</body>
+</html>
